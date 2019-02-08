@@ -1,3 +1,9 @@
+Because I'm very lazy, script something along the lines of
+```bash
+ffmpeg -f video4linux2 -video_size 640x480 -i /dev/video0 -vframes 1 /tmp/blaa.png
+png2pos -c -r /tmp/blaa.png > /dev/usb/lp0
+```
+
 # png2pos
 [![Build Status](https://travis-ci.org/petrkutalek/png2pos.svg?branch=master)](https://travis-ci.org/petrkutalek/png2pos)
 [![Paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4TNCBPJT2R4MC)
