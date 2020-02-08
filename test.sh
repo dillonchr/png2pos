@@ -13,7 +13,6 @@ convert -resize 400 -brightness-contrast +20x+100 -colorspace Gray -ordered-dith
 rm ./snap.png
 ./print.py doctored.png > /dev/usb/lp0
 rm ./doctored.png
-echo "        I was at UGX4" > /dev/usb/lp0
 cat - > /dev/usb/lp0 <<TYP
 
 
